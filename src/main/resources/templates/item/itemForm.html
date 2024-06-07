@@ -116,6 +116,7 @@
         // 상품 등록버튼을 누르면 천단위 콤마 제거 후 전송
          function beforeSubmit() {
          const f = document.itemForm;
+
          let price = f.price.value;
          f.price.value = Number(price.replaceAll(',', ''));
 

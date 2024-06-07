@@ -49,7 +49,8 @@
                         <th:block th:each="item, status: ${items.getContent()}">
                             <div class="col-lg-6 col-md-6 item-entry mb-4">
                                 <a class="product-item md-height bg-gray d-block">
-                                    <img th:src="${item.imgUrl}" th:alt="${item.itemNm}" class="img-fluid" />
+                                    <img th:src="${item.imgUrl}"
+                                         th:alt="${item.itemNm}" class="img-fluid" />
                                 </a>
                                 <h2 class="item-title">
                                     <a th:href="'/item/' + ${item.id}">[[${item.itemNm}]]</a>
